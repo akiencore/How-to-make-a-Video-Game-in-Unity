@@ -16,10 +16,28 @@ public class PlayerMovement : MonoBehaviour {
         //rb.useGravity = false;
         //rb.AddForce(0, 200, 500);
     }
-	
-	// Update is called once per frame
-	//void Update () {
-	void FixedUpdate () { //FixedUpdate for updating physics
-        rb.AddForce(0, 0, 2000 * Time.deltaTime); //add a force of 2000 on z-axis
+
+
+    public float forwardForce = 2000f;
+    public float sidewaysForce = 500f;
+
+    // Update is called once per frame
+    // void Update () {
+    void FixedUpdate ()
+    { //FixedUpdate for updating physics
+
+        //w/o Time.deltaTime, constantly apply
+        //with Time.deltaTime, apply once per frame or specific situation
+
+        rb.AddForce(0, 0, forwardForce * Time.deltaTime); //add a force of 2000 on z-axis
+
+        if (Input.GetKey("d"))
+        {
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+        }
+        if (Input.GetKey("a"))
+        {
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+        }
     }
 }
