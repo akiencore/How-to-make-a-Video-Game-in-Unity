@@ -3,6 +3,10 @@
 * This project is based on tutorial of Brackeys on Youtube
     * https://www.youtube.com/watch?v=j48LtUkZRjU&list=PLPV2KyIb3jR5QFsefuO2RlAgWEz6EvVi6
 
+</br>
+
+* Playable demos are in directory Playable/
+
 ****
 
 * Purpose: 

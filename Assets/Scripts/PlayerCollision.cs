@@ -14,13 +14,14 @@ public class PlayerCollision : MonoBehaviour
 
         //if(collisionInfo.collider.name == "Obstacle")
         if(collisionInfo.collider.tag == "Obstacle"){
-            
+
             //Debug.Log("We hit an obstacle!");
 
             movement.enabled = false; //stop the movement
+            //GetComponent<PlayerMovement>().enabled = false; //replace movement with GetComponent<PlayerMovement>()
+
+            FindObjectOfType<GameManager>().EndGame(); //find object of type "GameManager", and call Endgame(), Endgame() should be public
         }
-        
-        
         
     }
 
