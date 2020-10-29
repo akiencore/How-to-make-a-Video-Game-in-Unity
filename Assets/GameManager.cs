@@ -6,8 +6,16 @@ public class GameManager : MonoBehaviour
 
     bool gameHasEnded = false; //do not add public it you don't need to relate to something
 
-    public float restartDelay = 1f; 
-        
+    public float restartDelay = 1f;
+
+    public GameObject completeLevelUI;
+
+    public void CompleteLevel()
+    {
+        //Debug.Log("LEVEL WON!");
+        completeLevelUI.SetActive(true); // active/deactive a game object
+    }
+
     public void EndGame()
     {
         if (gameHasEnded == false)
