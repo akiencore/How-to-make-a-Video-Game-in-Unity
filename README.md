@@ -7,7 +7,7 @@
 
 </br>
 
-* Playable demos are in directory demos/
+* Playable demos are in the directory demos/
 
 ****
 
