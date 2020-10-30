@@ -1135,6 +1135,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 487af47a20069b84188f69e95f890297, type: 3}
+--- !u!54 &1706266455 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 526308945013368071, guid: 89d94daf48cb410449999023739f7c23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1731421317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1729528623 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2443817122083592238, guid: 4416c51a3291dcb4bb20546ada72fcd6,
@@ -1214,6 +1220,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 526308945013368070, guid: 89d94daf48cb410449999023739f7c23,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 526308945013368070, guid: 89d94daf48cb410449999023739f7c23,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1706266455}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89d94daf48cb410449999023739f7c23, type: 3}
 --- !u!1001 &1869940454

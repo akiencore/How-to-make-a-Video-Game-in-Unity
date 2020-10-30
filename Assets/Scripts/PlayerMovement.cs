@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
 
     public Rigidbody rb;
 
-
 	// Use this for initialization
 	void Start ()
     { // run when your game starts
