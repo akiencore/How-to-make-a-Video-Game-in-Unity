@@ -1,6 +1,12 @@
 # Playable demos
 
-* s
+Goal of the game: move the red block left and right to avoid black obstacles and falling down from the platform
+
+<br/>
+
+Control: 
+* A: left
+* D: right 
 
 ****
 
